@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/auth/google">Sign in with Google</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" id="searchBar" placeholder="Search...">
+                <button id="searchButton">Search</button>
+            </div>
+        </nav>
+        <h1 class="fade-in">Welcome to the Blogging Website</h1>
+    </header>
+    <main>
+        <section id="new-post">
+            <h2>Create a New Post</h2>
+            <form id="post-form">
+                <input type="text" id="post-title" placeholder="Post Title" required>
+                <textarea id="post-content" placeholder="Write your post here..." required></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+        <section id="posts">
+            <h2>Posts</h2>
+            <div id="post-list">
+                <!-- Posts will appear here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blogging Website</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+<link rel="stylesheet" href="style.css">

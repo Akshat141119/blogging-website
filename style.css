@@ -1,0 +1,146 @@
+/* Keyframe animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInButton {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+.animated-section {
+    animation: slideIn 1s ease-out;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.slide-in-button {
+    animation: slideInButton 0.5s ease-out;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#searchBar {
+    padding: 5px;
+}
+
+#searchButton {
+    padding: 5px 10px;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#searchButton:hover {
+    background: #ff3d00;
+}
+
+/* Body and other styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f4c3;
+    color: #333;
+}
+
+header {
+    background: #ff6f61;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffe261;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #ffbf00;
+}
+
+input[type="text"] {
+    margin-left: 2rem;
+    padding: 5px;
+}
+
+main {
+    margin: 2rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #61d7fffb;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#about, #contact {
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ff6171;
+    border-radius: 5px;
+}
+
+button {
+    background: #61ffd2;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00ffb3;
+}
